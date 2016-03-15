@@ -22,7 +22,7 @@ Om je domein te linken aan je droplet moet je een A record toevoegen aan je dome
 
 ## Verbinden met de server
 
-Alles wat je met de server wilt doen doe je via de command line.
+Alles wat je met de server wilt doen doe je via de terminal.
 
 *Vervang in de voorbeelden mijn IP met degene van je eigen Droplet*
 

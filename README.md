@@ -85,7 +85,7 @@ PM2 zorgt ervoor dat je applicatie altijd aan staat wat er ook gebeurt. (restart
 pm2 start ./bin/www
 ```
 
-**Let's encrypt**
+## Let's encrypt
 
 We gebruiken Let's encrypt voor de https.
 

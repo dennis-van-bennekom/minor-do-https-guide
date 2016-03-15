@@ -85,6 +85,20 @@ PM2 zorgt ervoor dat je applicatie altijd aan staat wat er ook gebeurt. (restart
 pm2 start ./bin/www
 ```
 
+**Let's encrypt**
+
+We gebruiken Let's encrypt voor de https.
+
+```
+sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
+cd /opt/letsencrypt
+./letsencrypt-auto certonly --standalone
+```
+
+Vul je email in en dan je domeinnaam.
+
+Nu zijn je SSL certificaten gemaakt.
+
 ## Webserver nginx installeren
 
 `sudo nano /etc/apt/sources.list.d/nginx.list`
@@ -103,30 +117,7 @@ sudo apt-get update
 sudo apt-get install nginx
 ```
 
-**nginx configuratie deel 1:**
-
-```sudo nano /etc/nginx/conf.d/default.conf```
-
-Verander de ```server_name localhost``` naar ```server_name jedomein.nl```
-
-Om nano af te sluiten doe de `ctrl+x` toetscombinatie en dan `y` om op te slaan.
-
-**Let's encrypt**
-
-We gebruiken Let's encrypt voor de https.
-
-```
-sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
-sudo service nginx stop
-cd /opt/letsencrypt
-./letsencrypt-auto certonly --standalone
-```
-
-Vul je email in en dan je domeinnaam.
-
-Nu zijn je SSL certificaten gemaakt.
-
-**nginx configuratie deel 2:**
+**nginx configuratie:**
 
 ```sudo nano /etc/nginx/conf.d/default.conf```
 

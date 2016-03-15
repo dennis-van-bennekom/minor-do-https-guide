@@ -10,7 +10,7 @@ Maak een droplet aan door op de groene "Create Droplet" knop te klikken.
 
 ![droplet.png](droplet.png)
 
-Recommended instellingen:
+Aanbevolen instellingen:
 
 ![settings.png](settings.png)
 

@@ -30,7 +30,7 @@ Voer de volgende commands uit om te verbinden met je server:
 
 ```ssh root@128.199.52.241```
 
-Als het goed is krijg je zo iets te zien:
+Als het goed is krijg je zoiets te zien:
 
 ```
 Welcome to Ubuntu 14.04.4 LTS (GNU/Linux 3.13.0-79-generic x86_64)
@@ -77,7 +77,7 @@ npm install
 Om te testen kunnen we de applicatie starten:
 ```node ./bin/www```
 
-Als je nu in je browser naar **http://128.199.52.241:3000/** gaat zie je je applicatie als het goed is.
+Als je nu in je browser naar **http://128.199.52.241:3000/** (eigen ip gebruiken!) gaat zie je je applicatie als het goed is.
 
 PM2 zorgt ervoor dat je applicatie altijd aan staat wat er ook gebeurt. (restart etc.)
 
@@ -95,7 +95,7 @@ deb http://nginx.org/packages/mainline/ubuntu/ trusty nginx
 deb-src http://nginx.org/packages/mainline/ubuntu/ trusty nginx
 ```
 
-Sla het op en doe dan:
+Om nano af te sluiten doe de `ctrl+x` toetscombinatie en dan `y` om op te slaan.
 
 ```
 wget -q -O- http://nginx.org/keys/nginx_signing.key | sudo apt-key add -
@@ -107,9 +107,9 @@ sudo apt-get install nginx
 
 ```sudo nano /etc/nginx/conf.d/default.conf```
 
-verander de ```server_name localhost``` naar ```server_name jedomein.nl```
+Verander de ```server_name localhost``` naar ```server_name jedomein.nl```
 
-om nano af te sluiten doe de `ctrl+x` toetscombinatie en dan `y` om op te slaan.
+Om nano af te sluiten doe de `ctrl+x` toetscombinatie en dan `y` om op te slaan.
 
 **Let's encrypt**
 

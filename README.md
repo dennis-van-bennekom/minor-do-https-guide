@@ -65,7 +65,7 @@ nvm install 5.8
 npm install -g pm2
 ```
 
-## Eigen applicatie clonen
+## Eigen applicatie clonen met git
 
 ```
 sudo apt-get install git

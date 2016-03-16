@@ -71,6 +71,8 @@ npm install -g pm2
 sudo apt-get install git
 git clone https://github.com/dennis-van-bennekom/looklive-server.git ~/looklive-server
 cd ~/looklive-server
+# Als je een aparte branch heb moet je daar nog even naar switchen
+git checkout feature/service-workers
 npm install
 ```
 
